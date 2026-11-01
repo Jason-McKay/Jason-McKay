@@ -5,7 +5,7 @@ Senior Java engineer. I build event-driven back ends with Spring Boot, Kafka and
 ## What I'm working on
 
 ### [Notification Platform](https://github.com/Jason-McKay/notification-platform)
-An event-driven notification system: an HTTP ingress validates requests, dedupes them on an idempotency key in Redis and publishes to Kafka, and a separate worker consumes, dispatches and records delivery. Two deployables that scale and fail independently, with a shared contract module. The worker retries failed deliveries through Kafka retry topics, dead-letters the ones that never succeed, and serves a read API and Micrometer metrics. A small [Angular dashboard](https://github.com/Jason-McKay/notification-dashboard-ui) shows the stats, the delivery list and each event's attempt timeline.
+An event-driven notification system: an HTTP ingress validates requests, dedupes them on an idempotency key in Redis and publishes to Kafka, and a separate worker consumes, dispatches and records delivery. Two deployables that scale and fail independently, with a shared contract module. The worker retries failed deliveries through Kafka retry topics, dead-letters the ones that never succeed, and serves a read API and Micrometer metrics. A small [Angular dashboard](https://github.com/Jason-McKay/notification-dashboard-ui) shows the stats, the delivery list and each event's attempt timeline ([see the demo](https://github.com/Jason-McKay/notification-dashboard-ui#readme)).
 `Java 21` · `Spring Boot 4.1` · `Kafka` · `Redis` · `MySQL` · `Micrometer` · `Angular 22` · `Docker Compose`
 
 ### [Message Inspector](https://github.com/Jason-McKay/message-inspector) and [its UI](https://github.com/Jason-McKay/message-inspector-ui)
